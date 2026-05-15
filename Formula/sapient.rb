@@ -5,13 +5,13 @@
 class Sapient < Formula
   desc "The official CLI for Sapient."
   homepage "https://docs.usesapient.com"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usesapient/sapient-cli/releases/download/v0.1.2/sapient_0.1.2_macos_amd64.zip"
-      sha256 "700a154b588a8642b192125363a83d7e7440afeaf4e4c0b208ee6a684c2a4fd3"
+      url "https://github.com/usesapient/sapient-cli/releases/download/v0.2.0/sapient_0.2.0_macos_amd64.zip"
+      sha256 "dc6a60ede22ce879c5774c2687e9bb08c2d74d8a2adf4cf136636f0c2419d72a"
 
       define_method(:install) do
         bin.install "sapient"
@@ -22,8 +22,8 @@ class Sapient < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usesapient/sapient-cli/releases/download/v0.1.2/sapient_0.1.2_macos_arm64.zip"
-      sha256 "41ef6af345e17fd74873ec87206c5e0ebe38d1d382fa6340c59b89f63fa76242"
+      url "https://github.com/usesapient/sapient-cli/releases/download/v0.2.0/sapient_0.2.0_macos_arm64.zip"
+      sha256 "3f042bfe9bcd3d2f5efead1d71797a2d2f48b77bfabecc483a96f9c2b5bbf0f9"
 
       define_method(:install) do
         bin.install "sapient"
@@ -37,8 +37,8 @@ class Sapient < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/sapient-cli/releases/download/v0.1.2/sapient_0.1.2_linux_amd64.tar.gz"
-      sha256 "80604fb6575873345e72462e87e4af3ed2669554556be99a59c80200e6673c66"
+      url "https://github.com/usesapient/sapient-cli/releases/download/v0.2.0/sapient_0.2.0_linux_amd64.tar.gz"
+      sha256 "313d6ff6b75d616de41bd706a27c86fa2b24b883117062f5a5296125ccf31df9"
       define_method(:install) do
         bin.install "sapient"
         bash_completion.install "completions/sapient.bash" => "sapient"
@@ -48,8 +48,8 @@ class Sapient < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/sapient-cli/releases/download/v0.1.2/sapient_0.1.2_linux_armv6.tar.gz"
-      sha256 "9f252ce074002aafced4e448b2b70a351536917be38068c474cd0953aabdf263"
+      url "https://github.com/usesapient/sapient-cli/releases/download/v0.2.0/sapient_0.2.0_linux_armv6.tar.gz"
+      sha256 "90e65ab3b50ad298577079f37363d228553330faf72d8389842f24631af8131b"
       define_method(:install) do
         bin.install "sapient"
         bash_completion.install "completions/sapient.bash" => "sapient"
@@ -59,8 +59,8 @@ class Sapient < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/sapient-cli/releases/download/v0.1.2/sapient_0.1.2_linux_arm64.tar.gz"
-      sha256 "a312985d4eabb2cab25c751799fac3763679303fb6fd9e87e10082fb11c0799a"
+      url "https://github.com/usesapient/sapient-cli/releases/download/v0.2.0/sapient_0.2.0_linux_arm64.tar.gz"
+      sha256 "288caed1b1439a893fbadef92057d67a4d62009dc3b43f8f8da10d20e67f55fb"
       define_method(:install) do
         bin.install "sapient"
         bash_completion.install "completions/sapient.bash" => "sapient"
