@@ -5,20 +5,20 @@
 class Sapient < Formula
   desc "Sapient Public API: Public API for Sapient CLI and external integrations."
   homepage "https://github.com/usesapient/cli"
-  version "0.4.7"
+  version "0.4.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usesapient/cli/releases/download/v0.4.7/cli_Darwin_x86_64.tar.gz"
-      sha256 "f7bc1378918e7bca02d8beaeb416d7369349c4ae6e2a683f6ed761e356334060"
+      url "https://github.com/usesapient/cli/releases/download/v0.4.8/cli_Darwin_x86_64.tar.gz"
+      sha256 "5069c3a2bf0960a4151f77e2e7c41be8fcd1c23fee77b9d2e63df5db44d0f7e3"
 
       define_method(:install) do
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usesapient/cli/releases/download/v0.4.7/cli_Darwin_arm64.tar.gz"
-      sha256 "35d3b5b4baa61e368558c10e0331857b7464991352a65f4fffb5c4af6f1ab7ee"
+      url "https://github.com/usesapient/cli/releases/download/v0.4.8/cli_Darwin_arm64.tar.gz"
+      sha256 "f517498f23dfbe15cdbfa61fb8166a0d8088fcf87166e44f886fce6fb229990b"
 
       define_method(:install) do
         bin.install "sapient"
@@ -28,15 +28,15 @@ class Sapient < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/cli/releases/download/v0.4.7/cli_Linux_x86_64.tar.gz"
-      sha256 "538f39298631ba4ff679e46923f26d5d7db7d31b048432f8f557bbce177b57c2"
+      url "https://github.com/usesapient/cli/releases/download/v0.4.8/cli_Linux_x86_64.tar.gz"
+      sha256 "c6935ad7fd0177fac99ca11216e6842abe9bddb41a9c18587ab5d762c0c7760d"
       define_method(:install) do
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/cli/releases/download/v0.4.7/cli_Linux_arm64.tar.gz"
-      sha256 "2de1a981ec9edad77d5d1afc94fcd718e2e56a23bf5f3b177efd9d59ca4c39c3"
+      url "https://github.com/usesapient/cli/releases/download/v0.4.8/cli_Linux_arm64.tar.gz"
+      sha256 "83f39eda6bae4beba5bef724583306d92e875b1cf9ea7774149319d1b6c5fe29"
       define_method(:install) do
         bin.install "sapient"
       end
