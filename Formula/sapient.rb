@@ -5,39 +5,39 @@
 class Sapient < Formula
   desc "Manage Sapient prompts, custom evals, and API Performance"
   homepage "https://github.com/usesapient/cli"
-  version "0.5.6"
+  version "0.5.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.6/cli_Darwin_x86_64.tar.gz"
-      sha256 "e7546ea0c5929d8dbe09a55d37d5b0040710cec3d4c3c20122c8003a3cf6f78a"
+      url "https://github.com/usesapient/cli/releases/download/v0.5.7/cli_Darwin_x86_64.tar.gz"
+      sha256 "4cf9b1237993cf60d1d40ff8f3c09ea38e94723cd5081024d76a6fb5ee3631d9"
 
-      define_method(:install) do
+      def install
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.6/cli_Darwin_arm64.tar.gz"
-      sha256 "816271a703d3fe41a026a955025c5e149f89ece6a2cf62ceccf2caa076143107"
+      url "https://github.com/usesapient/cli/releases/download/v0.5.7/cli_Darwin_arm64.tar.gz"
+      sha256 "6b1d1d6390f7405635350f030edd78d3da14ae66105db20f6572529539cb3ccc"
 
-      define_method(:install) do
+      def install
         bin.install "sapient"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.6/cli_Linux_x86_64.tar.gz"
-      sha256 "84a169a4155cdb69aa23d67e8f37a23a530eb97f983d50ab15ad56b9a5217976"
-      define_method(:install) do
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/usesapient/cli/releases/download/v0.5.7/cli_Linux_x86_64.tar.gz"
+      sha256 "7c170dfd8ea1e4e7f57d43e2a01ca470909dfe52c67c49563c5d1eaa81aa9233"
+      def install
         bin.install "sapient"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.6/cli_Linux_arm64.tar.gz"
-      sha256 "c43f0e3d3e6517c3d21e9c986d5fd18fbfeae027060fb79594adfa5339c1ef70"
-      define_method(:install) do
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/usesapient/cli/releases/download/v0.5.7/cli_Linux_arm64.tar.gz"
+      sha256 "6a0da8393c34c052df1bf1aa8931c770d516f94d737df40725d9780153d982e5"
+      def install
         bin.install "sapient"
       end
     end
