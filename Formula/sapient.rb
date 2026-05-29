@@ -5,20 +5,20 @@
 class Sapient < Formula
   desc "Manage Sapient prompts, custom evals, and API Performance"
   homepage "https://github.com/usesapient/cli"
-  version "0.5.12"
+  version "0.5.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.12/cli_Darwin_x86_64.tar.gz"
-      sha256 "577cf7cd538ab6db5796c474cd068922f2e0ce6ace19e90f0364ffb94d54c8e9"
+      url "https://github.com/usesapient/cli/releases/download/v0.5.13/cli_Darwin_x86_64.tar.gz"
+      sha256 "d8e936b5614308d16c85aaccbf3d64e23185bea3247fe8a3b5d4c1f60143a30a"
 
       def install
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.12/cli_Darwin_arm64.tar.gz"
-      sha256 "0540fdb7003ff37ace3a297006f2e44b9bd99f58145a925f8363729435aaf7eb"
+      url "https://github.com/usesapient/cli/releases/download/v0.5.13/cli_Darwin_arm64.tar.gz"
+      sha256 "0304e1aeed1593bd4c8362014011377cf5a1f5d26ade8e05ae51b5749254e31f"
 
       def install
         bin.install "sapient"
@@ -28,15 +28,15 @@ class Sapient < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.12/cli_Linux_x86_64.tar.gz"
-      sha256 "9d9c285b309539864fd0007d633451aa6b8022da14bd392a4dac32291da5d5f9"
+      url "https://github.com/usesapient/cli/releases/download/v0.5.13/cli_Linux_x86_64.tar.gz"
+      sha256 "3a4987607044327a0c92edb98ddb5088dc5776360f30fa9b4f48724809c7146a"
       def install
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/cli/releases/download/v0.5.12/cli_Linux_arm64.tar.gz"
-      sha256 "11907887eea262ca682aeea37e1aa40d09528b8dfb9bcd13116a08feff2e3856"
+      url "https://github.com/usesapient/cli/releases/download/v0.5.13/cli_Linux_arm64.tar.gz"
+      sha256 "e3ca43281e68232128a4dbd4b26cf6000bc7db8a6f43202c2e08fe1a21661a25"
       def install
         bin.install "sapient"
       end
