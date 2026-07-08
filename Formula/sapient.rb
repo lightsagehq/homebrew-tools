@@ -5,20 +5,20 @@
 class Sapient < Formula
   desc "Manage Sapient prompts, custom evals, and API Performance"
   homepage "https://docs.usesapient.com"
-  version "0.5.16"
+  version "0.5.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.16/sapient_Darwin_x86_64.tar.gz"
-      sha256 "b1161457f87c9923ee2ef9acc34beab12539e18e75fa3749c3a652876efbe5ee"
+      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.17/sapient_Darwin_x86_64.tar.gz"
+      sha256 "c4026ded68983e2ce2525fa54a03c10c4e954aef03288a86b5ea7ddd40c60b3a"
 
       def install
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.16/sapient_Darwin_arm64.tar.gz"
-      sha256 "76b35d22df8195036512d99c709b6a425970eecb05a09bc1aa818c4a4e544dff"
+      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.17/sapient_Darwin_arm64.tar.gz"
+      sha256 "dfc2abe5a13a5be497615f7a4a2b797ebd841aab53ae243ebeab8a155170dfad"
 
       def install
         bin.install "sapient"
@@ -28,15 +28,15 @@ class Sapient < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.16/sapient_Linux_x86_64.tar.gz"
-      sha256 "6b69c195a0b812de62032657946f395894322ad8bd74685713d29ad649ec1ab2"
+      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.17/sapient_Linux_x86_64.tar.gz"
+      sha256 "f963fbf67ce920ede51b912a0de95ed76d5b0213b4732c84eff833f88e3e5656"
       def install
         bin.install "sapient"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.16/sapient_Linux_arm64.tar.gz"
-      sha256 "723c0ec22c56d5ba14e925290050ef3a4053f13d9f52acaee6edcf61da915fe1"
+      url "https://github.com/usesapient/homebrew-tools/releases/download/v0.5.17/sapient_Linux_arm64.tar.gz"
+      sha256 "e5890a9ad2fdcf75e72171b2edb0287d82cc9db2d027db0b3a7e6670c904b248"
       def install
         bin.install "sapient"
       end
