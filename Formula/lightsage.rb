@@ -5,20 +5,20 @@
 class Lightsage < Formula
   desc "Manage Lightsage prompts, custom evals, and API Performance"
   homepage "https://docs.usesapient.com"
-  version "0.6.1"
+  version "0.6.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.1/lightsage_Darwin_x86_64.tar.gz"
-      sha256 "535a4f306e5c0e8d88dd48422cc820a3140610babb139c9d30f807e622557cbc"
+      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.2/lightsage_Darwin_x86_64.tar.gz"
+      sha256 "7720e7d16f0bec2f844fc7b4854318dba94122d73533cb3f0bf336ea0968f5a9"
 
       def install
         bin.install "lightsage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.1/lightsage_Darwin_arm64.tar.gz"
-      sha256 "78d06e9b753dd8706dedd14e626f442c4e4e3e725baae3ecaa75a938f839e795"
+      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.2/lightsage_Darwin_arm64.tar.gz"
+      sha256 "ab185544d6f69eea8d2fd4c4f9e365c7fb9440affb64a2934eafa97b30d25cf7"
 
       def install
         bin.install "lightsage"
@@ -28,15 +28,15 @@ class Lightsage < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.1/lightsage_Linux_x86_64.tar.gz"
-      sha256 "5c7db76f9aa438a7269fd8e0d0159df1b960b530d176eb72c78d6e4f258f157d"
+      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.2/lightsage_Linux_x86_64.tar.gz"
+      sha256 "125a7cf25fa55890f21e18c5295e14e6b9e7b59b78fa93206f123b5f396d835e"
       def install
         bin.install "lightsage"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.1/lightsage_Linux_arm64.tar.gz"
-      sha256 "2f0420de32833ae99c24ed53d1669678a97884a0848b8dfcdf84a339897e425c"
+      url "https://github.com/lightsagehq/homebrew-tools/releases/download/v0.6.2/lightsage_Linux_arm64.tar.gz"
+      sha256 "c0edd4163c28b0a7c7d1b8633ba8dc7110a62e72a56e243f0eadbd8ac63b37a1"
       def install
         bin.install "lightsage"
       end
